@@ -23,15 +23,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.139">
 
-        <Button
-            android:id="@+id/decreaseP1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="decreaseInteger1"
-            android:text="-" />
+        <ImageButton
+            android:id="@+id/decreaseP2"
+            android:onClick="decreaseInteger2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:maxHeight="55dp"
+            android:maxWidth="45dp"
+            android:rotation="0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/planeswalker1"
+            android:layout_marginTop="35dp"
+            android:background="@null"/>
 
         <TextView
-            android:id="@+id/integer_numberP1"
+            android:id="@+id/integer_numberP2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -43,12 +49,20 @@
             android:textSize="70sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/increaseP1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="increaseInteger1"
-            android:text="+" />
+        <ImageButton
+            android:id="@+id/increaseP2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:scaleType="fitCenter"
+            android:rotation="180"
+            android:src="@drawable/planeswalker1"
+            android:onClick="increaseInteger2"
+            android:layout_marginTop="35dp"
+            android:background="@null"
+            />
 
     </LinearLayout>
 
@@ -67,15 +81,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.728">
 
-        <Button
-            android:id="@+id/decreaseP2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="decreaseInteger2"
-            android:text="-" />
+        <ImageButton
+            android:id="@+id/decreaseP1"
+            android:layout_marginTop="35dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:onClick="decreaseInteger1"
+            android:rotation="0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/planeswalker1" />
 
         <TextView
-            android:id="@+id/integer_numberP2"
+            android:id="@+id/integer_numberP1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -87,12 +108,20 @@
             android:textSize="70sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/increaseP2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="increaseInteger2"
-            android:text="+" />
+        <ImageButton
+            android:id="@+id/increaseP1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="increaseInteger1"
+            android:adjustViewBounds="true"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:scaleType="fitCenter"
+            android:rotation="180"
+            android:src="@drawable/planeswalker1"
+            android:layout_marginTop="35dp"
+            android:background="@null"
+            />
 
     </LinearLayout>
 

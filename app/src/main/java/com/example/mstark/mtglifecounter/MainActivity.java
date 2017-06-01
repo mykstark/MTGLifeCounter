@@ -1,8 +1,6 @@
 package com.example.mstark.mtglifecounter;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -90,33 +88,33 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    int mintegerP1 = 20;
-    public void increaseInteger1(View view) {
-        mintegerP1 = mintegerP1 + 1;
-        display(mintegerP1);
+    int p1Life = 20;
+    public void increaseInteger2(View view) {
+        p1Life = p1Life + 1;
+        display(p1Life);
     }
-    public void decreaseInteger1(View view) {
-        mintegerP1 = mintegerP1 - 1;
-        display(mintegerP1);
+    public void decreaseInteger2(View view) {
+        p1Life = p1Life - 1;
+        display(p1Life);
     }
     private void display(int number) {
         TextView displayInteger = (TextView) findViewById(
-                R.id.integer_numberP1);
+                R.id.integer_numberP2);
         displayInteger.setText("" + number);
     }
 
-    int mintegerP2 = 20;
-    public void increaseInteger2(View view) {
-        mintegerP2 = mintegerP2 + 1;
-        display2(mintegerP2);
+    int p2Life = 20;
+    public void increaseInteger1(View view) {
+        p2Life = p2Life + 1;
+        display2(p2Life);
     }
-    public void decreaseInteger2(View view) {
-        mintegerP2 = mintegerP2 - 1;
-        display2(mintegerP2);
+    public void decreaseInteger1(View view) {
+        p2Life = p2Life - 1;
+        display2(p2Life);
     }
     private void display2(int number) {
         TextView displayInteger = (TextView) findViewById(
-                R.id.integer_numberP2);
+                R.id.integer_numberP1);
         displayInteger.setText("" + number);
     }
 
